@@ -8,6 +8,9 @@
 #define _FN1 1
 #define _FN2 2
 
+
+
+
 enum custom_keycodes {
   QWERTY = SAFE_RANGE,
 };
@@ -27,15 +30,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_FN1] = LAYOUT(
     KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL,
-    RESET,   RGB_HUI, RGB_SAI, RGB_VAI, KC_VOLU, KC_LBRC, KC_RBRC, KC_4,    KC_5,    KC_6,    KC_SCLN,          _______,
-    RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD, KC_VOLD, KC_LCBR, KC_RCBR,          KC_1,    KC_2,    KC_3,    KC_UP,   _______,
-    RGB_TOG, _______, _______, _______, _______,          KC_DEL,                    KC_0,    KC_LEFT, KC_DOWN, KC_RGHT
+    RESET,   _______, _______, _______, KC_VOLU, ES_LBRC, ES_RBRC, KC_4,    KC_5,    KC_6,    KC_SCLN,          _______,
+    _______, _______, _______, _______, KC_VOLD, ES_LCBR, ES_RCBR,          KC_1,    KC_2,    KC_3,    KC_UP,   _______,
+    _______, _______, _______, _______, _______,          KC_DEL,                    KC_0,    KC_LEFT, KC_DOWN, KC_RGHT
   ),
 
   [_FN2] = LAYOUT(
     KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_UNDS, KC_PLUS,
     _______, _______, _______, KC_INS,  KC_PGUP, KC_HOME, _______, _______, _______, _______, KC_COLN,          _______,
-    _______, _______, _______, KC_DEL,  KC_PGDN, KC_END,  _______,          _______, _______, _______, _______, _______,
+    _______, KC_NUBS, _______, KC_DEL,  KC_PGDN, KC_END,  _______,          _______, _______, _______, _______, _______,
     _______, _______, _______, _______, KC_DEL,           _______,                   _______, _______, _______, _______
   )
 

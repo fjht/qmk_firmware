@@ -5,6 +5,8 @@
 #endif
 
 #include "quantum.h"
+#include "quantum/keymap_extras/keymap_spanish.h"
+
 
 #define LAYOUT( \
     LA1, LA2, LA3, LA4, LA5, LA6, RA1, RA2, RA3, RA4, RA5, RA6, RA7, \
